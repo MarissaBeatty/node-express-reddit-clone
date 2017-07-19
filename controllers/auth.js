@@ -1,5 +1,4 @@
 var express = require('express');
-//this isa change
 
 module.exports = function(myReddit) {
     var authController = express.Router();
@@ -22,4 +21,3 @@ module.exports = function(myReddit) {
     
     return authController;
 }
-//hi this is a change
