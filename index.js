@@ -11,10 +11,6 @@ var onlyLoggedIn = require('./lib/only-logged-in.js'); // only allows requests f
 // Controllers
 var authController = require('./controllers/auth.js');
 
-
-//blah bkah fix
-
-
 /*
  Load the RedditAPI class and create an API with db connection. This connection will stay open as
  long as the web server is running, which is 24/7.
