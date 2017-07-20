@@ -1,0 +1,15 @@
+extends layout.pug
+block append content
+    h1 Signup
+        form(method='POST' action='/auth/signup')
+            p Username:
+                input(type='text' name='username') 
+            p Password:
+                input(type='text' name='password') 
+            button Signup!
+                btn.btn-success(type='submit')
+            
+         
+            
+          
+        

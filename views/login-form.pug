@@ -1,0 +1,10 @@
+extends layout.pug
+block append content
+    h1 Login    
+        form(method='POST' action='/auth/login')
+            p Username:
+                input(type='text' name='username') 
+            p Password:
+                input(type='text' name='password')
+            button Login!
+                btn.btn-success(type='submit') 
