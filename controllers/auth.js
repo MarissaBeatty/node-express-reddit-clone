@@ -15,8 +15,8 @@ module.exports = function(myReddit) {
            var userId = myReddit.checkUserLogin.userId
         //   res.send(myReddit.checkUserLogin.username);
             myReddit.createUserSession(userId)
-            .then(response.cookie('SESSION', response.createUserSession))
-            .then(response.redirect('homepage'))
+            response.cookie('SESSION', response.createUserSession)
+            .then(response.redirect('/'))
         }
     })
     
